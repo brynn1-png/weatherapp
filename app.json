@@ -1,0 +1,33 @@
+{
+  "expo": {
+    "name": "WeatherAI",
+    "slug": "weatherai",
+    "version": "1.0.0",
+    "icon": "./assets/images/weatherai-launcher-v1.png",
+    "scheme": "weatherai",
+    "userInterfaceStyle": "dark",
+    "android": {
+      "package": "com.weatherai.app",
+      "adaptiveIcon": {
+        "backgroundColor": "#26142F",
+        "foregroundImage": "./assets/images/weatherai-launcher-v1.png"
+      },
+      "predictiveBackGestureEnabled": true
+    },
+    "plugins": [
+      "expo-router",
+      [
+        "expo-splash-screen",
+        {
+          "backgroundColor": "#090F18",
+          "image": "./assets/images/weatherai-launcher-v1.png",
+          "imageWidth": 112
+        }
+      ]
+    ],
+    "experiments": {
+      "typedRoutes": true,
+      "reactCompiler": true
+    }
+  }
+}

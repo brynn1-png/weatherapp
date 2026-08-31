@@ -1,0 +1,42 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-08-30T10:30:00+08:00",
+  "title": "Design System: WeatherAI",
+  "extensions": {
+    "colorMeta": {
+      "night-canvas": { "role": "neutral", "displayName": "Night Canvas", "canonical": "#090F18" },
+      "weather-pink": { "role": "primary", "displayName": "Weather Pink", "canonical": "#FF217B" },
+      "dock-purple": { "role": "secondary", "displayName": "Dock Purple", "canonical": "#5C42A8" },
+      "rain-cyan": { "role": "tertiary", "displayName": "Rain Cyan", "canonical": "#77D8FF" }
+    },
+    "typographyMeta": {
+      "display": { "displayName": "Weather Display", "purpose": "Current temperature only." },
+      "body": { "displayName": "Poppins Body", "purpose": "Forecast explanations and advice." }
+    },
+    "shadows": [
+      { "name": "card-lift", "value": "0 6px 14px rgba(0,0,0,0.22)", "purpose": "Raised information cards." },
+      { "name": "dock-lift", "value": "0 12px 20px rgba(22,14,54,0.55)", "purpose": "Floating navigation dock." },
+      { "name": "action-glow", "value": "0 8px 15px rgba(255,71,163,0.45)", "purpose": "Center location action only." }
+    ],
+    "motion": [
+      { "name": "press-feedback", "value": "120ms ease-out", "purpose": "Opacity or tonal response without layout movement." },
+      { "name": "screen-change", "value": "220ms cubic-bezier(0.2,0,0,1)", "purpose": "Android fade-through transitions." }
+    ],
+    "breakpoints": [
+      { "name": "compact-phone", "value": "<600dp" },
+      { "name": "expanded", "value": ">=600dp" }
+    ]
+  },
+  "components": [],
+  "narrative": {
+    "northStar": "Neon Weather Companion",
+    "overview": "Dark-first, vivid, dimensional, and friendly. Weather facts lead; 3D weather art and Kai add personality without obscuring trust.",
+    "keyCharacteristics": ["Night canvas", "Warm signature gradient", "Poppins", "Soft 3D weather art", "Weather-responsive Kai", "Floating purple navigation"],
+    "rules": [
+      { "name": "Gradient Rationing", "body": "Use the warm signature gradient once per screen.", "section": "colors" },
+      { "name": "Weight Ceiling", "body": "Body copy never exceeds SemiBold.", "section": "typography" }
+    ],
+    "dos": ["Use semantic runtime tokens.", "Keep weather facts visually primary.", "Use Kai only at a readable scale."],
+    "donts": ["Do not return to the light-blue system.", "Do not mix icon families.", "Do not present Kai advice as an official warning."]
+  }
+}
